@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Disney Streaming Transformation Roadmap: Crawl / Walk / Run</title>
 <style>
-  :root{--ink:#1d2433;--mute:#5b6577;--line:#d7dbe3;--bg:#f6f7fa;--crawl:#2f6f4f;--walk:#b5701a;--run:#7a2f4f;--inf:#b3261e;--dec:#2a4fa8}
+  :root{--ink:#1d2433;--mute:#5b6577;--line:#d7dbe3;--bg:#f6f7fa;--crawl:#b3261e;--walk:#9a5b00;--run:#2f6f4f;--inf:#5b6577;--stated:#2f6f4f;--dec:#2a4fa8}
   *{box-sizing:border-box}
   body{font:15px/1.5 system-ui,-apple-system,Segoe UI,sans-serif;color:var(--ink);background:var(--bg);margin:0;padding:24px}
   main{max-width:1180px;margin:0 auto}
@@ -21,11 +21,12 @@
   .crawl .card{border-left-color:var(--crawl)}.walk .card{border-left-color:var(--walk)}.run .card{border-left-color:var(--run)}
   .card h3{margin:0 0 2px;font-size:15px}
   .id{display:inline-block;font-weight:700;font-size:12px;background:var(--ink);color:#fff;border-radius:4px;padding:1px 6px;margin-right:6px}
+  .qt{display:inline-block;font-size:11px;font-weight:600;background:#eceff5;color:var(--mute);border-radius:4px;padding:1px 6px;margin-left:8px;vertical-align:1px}
   .when{font-size:12px;color:var(--mute);margin-bottom:6px}
   .card dl{margin:6px 0 0;font-size:13px}
   .card dt{font-weight:600;margin-top:5px}.card dd{margin:0}
   .dep{font-size:12px;margin-top:8px;padding-top:6px;border-top:1px dashed var(--line)}
-  .badge{font-size:11px;font-weight:700;padding:1px 6px;border-radius:10px;color:#fff;background:var(--crawl)}
+  .badge{font-size:11px;font-weight:700;padding:1px 6px;border-radius:10px;color:#fff;background:var(--stated)}
   .badge.inf{background:var(--inf)}
   .dm{background:#eef2fb;border:1px solid #c9d5f2;border-left:5px solid var(--dec);border-radius:8px;padding:8px 12px;margin-bottom:10px;font-size:13px}
   .dm b{color:var(--dec)}
@@ -46,70 +47,76 @@
 <nav><a href="index.html">About Us</a><a href="roadmap.html"><b>Roadmap</b></a><a href="raci.html">RACI</a><a href="dashboard.html">Dashboard</a></nav>
 <h1>The Walt Disney Company: Streaming Transformation Roadmap</h1>
 <p class="sub">Crawl / Walk / Run reconstruction of Disney's direct-to-consumer transformation, 2017 to 2026, sequenced by dependency.</p>
-<p class="team">Member A (Roadmap Sequencer): [NAME] · Member B (Governance Designer): [NAME] · Member C (Dashboard Designer): [NAME] · Member D (Site Editor): [NAME]</p>
-
-<p class="legend"><span class="badge">stated</span> dependency is stated in the cited source &nbsp; <span class="badge inf">inferred</span> dependency is the team's own inference; the source is silent or partial. Source codes (S1, S2…) refer to the source table at the bottom. Blue boxes are governance decision points that feed the RACI.</p>
+<p class="team">Member A (Roadmap Sequencer) and Member D (Site Editor): Navin Balkissoon · Member B (Governance Designer): Nelson-Augusto Hernandez Panunzio · Member C (Dashboard Designer): Eferhire Govan</p>
 
 <div class="grid">
 
 <div class="col crawl">
 <h2>CRAWL: Foundation</h2>
-<p class="tag">Capabilities Walk depends on. Run in parallel.</p>
+<p class="tag">Capabilities Walk depends on. Q3 2017 to Q1 2018, about seven months. Run in parallel.</p>
 
-<div class="card"><h3><span class="id">C1</span>BAMTech Streaming Platform Control</h3>
-<div class="when">Deal announced Aug 8, 2017 (Disney already held a 33% stake); 10-K dates the acquisition of a majority interest to Sept 2017</div>
-<dl><dt>What it is</dt><dd>Disney pays $1.58B for an additional 42% of BAMTech, a streaming technology, data analytics and commerce provider. Later renamed Disney Streaming Services.</dd>
-<dt>Capability created</dt><dd>A proven platform that could power both planned consumer services.</dd></dl>
-<div class="dep">Sources: S1, S2, S5 (pp. on technology platform).</div></div>
+<div class="card"><h3><span class="id">C1</span>BAMTech Streaming Platform Control<span class="qt">Q3 2017</span></h3>
+<div class="when">Deal announced Aug 8, 2017 (Disney already held a 33% stake); the 10-K dates the acquisition of a majority interest to Sept 2017</div>
+<dl><dt>Before</dt><dd>Disney held a 33% minority stake in BAMTech and did not control any streaming platform.</dd>
+<dt>Why</dt><dd>Disney wanted control of the platform behind its planned consumer services.</dd>
+<dt>Decision</dt><dd>Pay $1.58B for an additional 42% of BAMTech, a streaming technology, data analytics and commerce provider, to take a majority stake. Later renamed Disney Streaming Services.</dd>
+<dt>Walk depends on</dt><dd>A proven platform able to power both planned consumer services.</dd></dl>
+<div class="dep">Sources: S1, S2, S5.</div></div>
 
-<div class="card"><h3><span class="id">C2</span>Direct-to-Consumer and International Segment</h3>
+<div class="card"><h3><span class="id">C2</span>Direct-to-Consumer Management Structure<span class="qt">Q1 2018</span></h3>
 <div class="when">Announced Mar 14, 2018, effective immediately</div>
-<dl><dt>What it is</dt><dd>New segment combining direct-to-consumer platforms, technology and international operations under one chairman (Kevin Mayer, reporting to the CEO).</dd>
-<dt>Capability created</dt><dd>One accountable owner for streaming platforms, technology and international distribution.</dd></dl>
-<div class="dep">Source: S3. Note: BAMTech later sat inside this segment (S4), but C1 did not need C2 to be complete.</div></div>
+<dl><dt>Change</dt><dd>A management structure change: Disney created a Direct-to-Consumer and International segment, combining streaming platforms, technology and international operations under one chairman (Kevin Mayer, reporting to the CEO).</dd>
+<dt>Walk depends on</dt><dd>An organizational structure aligned to the direct-to-consumer strategy, with one accountable owner for streaming platforms, technology and international distribution.</dd></dl>
+<div class="dep">Source: S3. BAMTech later sat inside this segment (S4), but C1 did not need C2 to be complete.</div></div>
 </div>
 
 <div class="col walk">
 <h2>WALK: Deployment</h2>
-<p class="tag">Crawl capabilities in one product, one market.</p>
+<p class="tag">Crawl capabilities in a limited scope, with one readiness outcome.</p>
 
-<div class="card"><h3><span class="id">W1</span>ESPN+ Launch</h3>
+<div class="card"><h3><span class="id">W1</span>ESPN+ Launch<span class="qt">Q2 2018</span></h3>
 <div class="when">April 12, 2018</div>
-<dl><dt>Limited scope</dt><dd>One sports-focused service, U.S., $4.99 a month, inside a re-imagined ESPN app.</dd>
-<dt>Readiness signal</dt><dd>1 million paid subscribers in just over five months; more than 2 million by April 2019 (S5).</dd></dl>
-<div class="dep">← C1 <span class="badge">stated</span> S4: powered by BAMTECH; S1/Iger letter: BAMTech let Disney launch quickly.</div></div>
+<dl><dt>Crawl dependency</dt><dd>C1 (stated)</dd>
+<dt>Limited scope</dt><dd>One sports-focused service, U.S. only, $4.99 a month, inside a re-imagined ESPN app.</dd>
+<dt>Readiness outcome</dt><dd>1 million paid subscribers in just over five months (S5).</dd></dl>
+<div class="dep">← C1 <span class="badge">stated</span> S4: powered by BAMTECH; S1 and the Iger letter: BAMTech let Disney launch quickly.</div></div>
 
-<div class="card"><h3><span class="id">W2</span>Disney+ U.S. Launch</h3>
-<div class="when">November 12, 2019 (U.S. first; other regions staged)</div>
-<dl><dt>Limited scope</dt><dd>U.S. at launch, wholly subscription-funded with no ads, at $6.99 a month.</dd>
-<dt>Readiness signal</dt><dd>50 million paid subscribers within five months, counting early rollouts in Europe and India (S6). A U.S.-only figure is a gap.</dd></dl>
-<div class="dep">← C1 <span class="badge">stated</span> S5: BAMTech platform powers Disney+; S2: BAMTech supports launch.<br>← C2 <span class="badge inf">inferred</span> S3 states the segment's purpose, but does not say Disney+ required it.</div></div>
+<div class="card"><h3><span class="id">W2</span>Disney+ Initial-Market Launch<span class="qt">Q4 2019</span></h3>
+<div class="when">November 12, 2019 (U.S., Canada, Netherlands); November 19, 2019 (Australia, New Zealand, Puerto Rico)</div>
+<dl><dt>Crawl dependency</dt><dd>C1 (stated), C2 (inferred)</dd>
+<dt>Limited scope</dt><dd>Initial markets only (U.S., Canada, Netherlands, Australia, New Zealand, Puerto Rico), wholly subscription-funded with no ads; U.S. price $6.99 a month. Europe and India came later.</dd>
+<dt>Readiness outcome</dt><dd>26.5 million paid subscribers by Dec 28, 2019, about seven weeks after launch and before the European and Indian rollouts (S14).</dd></dl>
+<div class="dep">← C1 <span class="badge">stated</span> S5: BAMTech platform powers Disney+; S2: BAMTech supports launch.<br>← C2 <span class="badge inf">inferred</span> S3 states the segment&#x27;s purpose, but does not say Disney+ required it.</div></div>
 </div>
 
 <div class="col run">
 <h2>RUN: Scale</h2>
-<p class="tag">Walk pilots extended across markets, models and apps.</p>
+<p class="tag">Walk initiatives extended to full scale.</p>
 
-<div class="card"><h3><span class="id">R1</span>Disney+ International Rollout</h3>
-<div class="when">Plan (Apr 2019): W. Europe and Asia Pacific in fiscal Q1–Q2 2020, E. Europe and Latin America from fiscal Q1 2021. Actual: seven W. European markets Mar 24, 2020; India with Hotstar April 2020</div>
-<dl><dt>Scales</dt><dd>W2</dd>
+<div class="card"><h3><span class="id">R1</span>Disney+ International Rollout<span class="qt">Q1 to Q2 2020</span></h3>
+<div class="when">Plan (Apr 2019): W. Europe and Asia Pacific in fiscal Q1 to Q2 2020, E. Europe and Latin America from fiscal Q1 2021. Actual: seven W. European markets Mar 24, 2020; India with Hotstar April 2020</div>
+<dl><dt>Scales</dt><dd>W2 (stated)</dd>
 <dt>Full scope</dt><dd>Staged country launches, prioritized by content licenses, willingness to pay, local payments and partner readiness.</dd>
-<dt>Org change required</dt><dd>Local partnerships and regional leadership; in India, Disney+ was offered with the existing Hotstar service, which accounted for about 8 million of 50 million subscribers.</dd></dl>
+<dt>Org change required</dt><dd>Local partnerships and regional leadership; in India, Disney+ was offered with the existing Hotstar service, which accounted for about 8 million of 50 million subscribers.</dd>
+<dt>Success metric</dt><dd>50 million paid Disney+ subscribers by Apr 8, 2020 (S6), about 8 million of them Hotstar.</dd></dl>
 <div class="dep">← W2 <span class="badge">stated</span> S5, S6. Sources: S5, S6, S12 (secondary on the Mar 2020 launch).</div></div>
 
-<div class="card"><h3><span class="id">R2</span>Ad-Supported Disney+ Tier</h3>
+<div class="card"><h3><span class="id">R2</span>Ad-Supported Disney+ Tier<span class="qt">Q4 2022</span></h3>
 <div class="when">Announced Aug 10, 2022; launched Dec 8, 2022 (U.S.)</div>
-<dl><dt>Scales</dt><dd>W2</dd>
-<dt>Full scope</dt><dd>"Disney+ Basic" at $7.99 a month with 100+ advertisers at launch, plus new ad-supported bundles.</dd>
-<dt>Org change required</dt><dd>A global advertising sales operation (later a shared service) serving streaming; a reversal of the original ad-free model.</dd></dl>
-<div class="dep">← W2 <span class="badge inf">inferred</span> Disney described the tier as a building block toward its subscriber goal (secondary report); not stated as a dependency in S8. Sources: S5, S8, S9.</div></div>
+<dl><dt>Scales</dt><dd>W2 (inferred)</dd>
+<dt>Full scope</dt><dd>&quot;Disney+ Basic&quot; at $7.99 a month with 100+ advertisers at launch, plus new ad-supported bundles.</dd>
+<dt>Org change required</dt><dd>A global advertising sales operation (later a shared service) serving streaming; a reversal of the original ad-free model.</dd>
+<dt>Success metric</dt><dd>Ad-supported plans reached 37% of U.S. and 30% of global Disney+ subscribers by Q4 fiscal 2024, and about 60% of new subscribers chose them (S15).</dd></dl>
+<div class="dep">← W2 <span class="badge inf">inferred</span> Disney described the tier as a building block toward its subscriber goal (secondary report); S8 does not state it as a dependency. Sources: S5, S8, S9, S15.</div></div>
 
-<div class="card"><h3><span class="id">R3</span>Unified Disney+ and Hulu App</h3>
-<div class="when">Announced Aug 6, 2025 for 2026; Hulu 100% owned after Comcast buyout in June 2025 (secondary)</div>
-<dl><dt>Scales</dt><dd>W2</dd>
+<div class="card"><h3><span class="id">R3</span>Unified Disney+ and Hulu App<span class="qt">Announced Q3 2025, for 2026</span></h3>
+<div class="when">Announced Aug 6, 2025 for 2026; Hulu 100% owned after the Comcast buyout in June 2025 (secondary)</div>
+<dl><dt>Scales</dt><dd>W2 (stated)</dd>
+<dt>Why Hulu</dt><dd>Hulu carried the general entertainment (FX, ABC primetime) that Disney+, with its family focus, lacked. With Disney owning Hulu outright from June 2025, Disney&#x27;s stated aims for one app are a better consumer experience and lower churn.</dd>
 <dt>Full scope</dt><dd>One app and one tech platform for branded and general entertainment, news and sports; Hulu replaces the Star brand internationally from fall 2025.</dd>
-<dt>Org change required</dt><dd>Merged product, platform and ad-sales operations; stated aims are lower churn and cost synergies.</dd></dl>
-<div class="dep">← W2 <span class="badge">stated</span> CEO says both services will be "on one tech platform" (secondary: Variety; primary Disney release is a gap). Source: S11.</div></div>
+<dt>Org change required</dt><dd>Merged product, platform and ad-sales operations.</dd>
+<dt>Success metric</dt><dd>Lower churn after the unified app, Disney&#x27;s stated aim.</dd></dl>
+<div class="dep">← W2 <span class="badge">stated</span> CEO says both services will be &quot;on one tech platform&quot; (secondary: Variety; primary Disney release is a gap). Source: S11.</div></div>
 </div>
 
 </div>
@@ -125,16 +132,16 @@
 
 <section>
 <h2 class="sec">Dependency annotations</h2>
+<p class="legend">Stated by Disney: a Disney source says the later initiative relies on the earlier one. Our inference: the order is our own reasoning, because the sources give the purpose but do not say the later initiative required it.</p>
 <table>
-<tr><th>Dependency</th><th>Enables</th><th>Basis</th></tr>
-<tr><td>C1 BAMTech Streaming Platform Control → W1 ESPN+ Launch</td><td>Launching a subscription streaming service on an existing, proven platform in early 2018</td><td>Stated (S1, S4)</td></tr>
-<tr><td>C1 BAMTech Streaming Platform Control → W2 Disney+ U.S. Launch</td><td>Running Disney+ on the same platform, with analytics and personalization</td><td>Stated (S2, S5)</td></tr>
-<tr><td>C2 Direct-to-Consumer and International Segment → W2 Disney+ U.S. Launch</td><td>One accountable leader for platform, technology and distribution during launch</td><td>Inferred (S3 gives the purpose, not a requirement)</td></tr>
-<tr><td>W2 Disney+ U.S. Launch → R1 Disney+ International Rollout</td><td>Staged expansion using a proven launch playbook and platform</td><td>Stated (S5)</td></tr>
-<tr><td>W2 Disney+ U.S. Launch → R2 Ad-Supported Disney+ Tier</td><td>Adding a lower-priced, ad-funded tier to an established subscriber base</td><td>Inferred</td></tr>
-<tr><td>W2 Disney+ U.S. Launch → R3 Unified Disney+ and Hulu App</td><td>Merging Hulu onto Disney+'s platform with combined ad sales</td><td>Stated (secondary; primary release to be located)</td></tr>
+<tr><th>Dependency</th><th>Enables</th><th>Basis of the link</th></tr>
+<tr><td>C1 BAMTech Streaming Platform Control → W1 ESPN+ Launch</td><td>Launching a subscription streaming service on an existing, proven platform in early 2018</td><td>Stated by Disney (S1, S4)</td></tr>
+<tr><td>C1 BAMTech Streaming Platform Control → W2 Disney+ Initial-Market Launch</td><td>Running Disney+ on the same platform, with analytics and personalization</td><td>Stated by Disney (S2, S5)</td></tr>
+<tr><td>C2 Direct-to-Consumer Management Structure → W2 Disney+ Initial-Market Launch</td><td>One accountable leader for platform, technology and distribution during launch</td><td>Our inference (S3 gives the segment's purpose, not a requirement)</td></tr>
+<tr><td>W2 Disney+ Initial-Market Launch → R1 Disney+ International Rollout</td><td>Staged expansion using a proven launch playbook and platform</td><td>Stated by Disney (S5)</td></tr>
+<tr><td>W2 Disney+ Initial-Market Launch → R2 Ad-Supported Disney+ Tier</td><td>Adding a lower-priced, ad-funded tier to an established subscriber base</td><td>Our inference (S8 does not say the tier needed W2)</td></tr>
+<tr><td>W2 Disney+ Initial-Market Launch → R3 Unified Disney+ and Hulu App</td><td>Disney's stated aims: a better consumer experience and lower churn</td><td>Stated by Disney's CEO (S11, press coverage; Disney's own release to be located)</td></tr>
 </table>
-<p class="legend"><b>Removal test.</b> Without C1, W1 cannot launch in 2018 and W2 has no platform. Without C2, Disney+ could still launch, so C2 is the weakest Crawl item: either find evidence that the segment was required, or treat C2 as an organizational enabler and say so. W1 → Run is not drawn: ESPN+ is a Walk learning step, and the Run items scale Disney+. The group should decide whether that is acceptable.</p>
 </section>
 
 <section>
@@ -142,23 +149,9 @@
 <div class="rat"><h3>Why Crawl precedes Walk</h3>
 <p>Crawl holds the two foundations Disney set before launching any consumer service: control of streaming technology and an organization to run it. BAMTech gave Disney a proven streaming and commerce platform instead of a ground-up build, and Disney's filings say it supported the launch of both services. The Direct-to-Consumer and International segment put platforms, technology and international operations under one accountable leader. Remove BAMTech and ESPN+ cannot launch in early 2018; remove the segment and platform, distribution and international decisions stay scattered across businesses. The two run in parallel.</p></div>
 <div class="rat"><h3>Why Walk precedes Run</h3>
-<p>Walk tested the platform on two bounded products before any global bet. ESPN+ was one sports service in the United States at a low monthly price; Disney+ launched in the United States first, with other regions staged afterwards. Each produced readiness evidence: ESPN+ passed one million paid subscribers in just over five months, and Disney+ reached 50 million within five months as early rollouts began. Run depends on that evidence because it changes pricing, advertising and app design for a mass audience. Scaling before demand and stability were proven would have put the whole platform at risk.</p></div>
+<p>Walk tested the platform on two bounded products before any global bet. ESPN+ was one sports service in the United States at a low monthly price; Disney+ launched in the United States and five other markets first, with Europe and India staged afterwards. Each produced readiness evidence: ESPN+ passed one million paid subscribers in just over five months, and Disney+ reached 26.5 million paid subscribers within seven weeks across its initial markets. Run depends on that evidence because it changes pricing, advertising and app design for a mass audience. Scaling before demand and stability were proven would have put the whole platform at risk.</p></div>
 <div class="rat"><h3>Why Run comes last</h3>
 <p>Run scales Disney+ beyond its launch design, and every step changes the organization, not just the technology. International rollout needs local payments, partners and regional leadership; the ad-supported tier reverses the original ad-free model and needs an advertising sales operation; the unified app merges two services onto one platform and one ad-sales effort. These come last because each consumes what Walk proved: a stable platform, a paying base and a launch playbook. The 2020 and 2023 reorganizations show the governance cost: who decides distribution, pricing and profit was contested, and Run depends on settling it.</p></div>
-</section>
-
-<section>
-<h2 class="sec">Known gaps in the public record</h2>
-<div class="note">
-<ul>
-<li>Disney's initial 33% BAMTech stake (August 2016) is not yet confirmed from a primary source; S1 confirms only that Disney already held 33%.</li>
-<li>The brief expects Crawl to take 6 to 12 months. Disney's foundation work ran from 2016 to 2018, about two years; this roadmap reflects the case.</li>
-<li>Public sources say little about Disney's data platform, architecture standards or data ownership. RACI decisions of those types will rest on inference and must be marked as such.</li>
-<li>The 2019 subscriber target (60 to 90 million Disney+ subscribers by fiscal 2024) may not be comparable to later reported figures, which exclude Disney+ Hotstar. Check before using on the dashboard.</li>
-<li>No U.S.-only Disney+ launch figure has been located, and the primary Disney release for the August 2025 app unification is still to be found.</li>
-<li>Oct 2020 and Feb 2023 reorganization details come from Disney releases plus secondary coverage; the 2023 release page is undated.</li>
-</ul>
-</div>
 </section>
 
 <section>
@@ -177,6 +170,9 @@
 <tr><td>S10</td><td>The Walt Disney Company, Q4 and full-year fiscal 2024 earnings release (Nov 14, 2024).</td></tr>
 <tr><td>S11</td><td>Secondary on Aug 6, 2025 announcement: Variety, Axios (primary Disney release to be located).</td></tr>
 <tr><td>S12</td><td>Secondary on the March 2020 European launch: Senal News. Replace with Disney's own release.</td></tr>
+<tr><td>S13</td><td>Disney+ press release, Nov 12, 2019: launch in the U.S., Canada and the Netherlands; Australia, New Zealand and Puerto Rico on Nov 19. press.disneyplus.com</td></tr>
+<tr><td>S14</td><td>The Walt Disney Company, Q1 fiscal 2020 earnings release, Feb 4, 2020: paid subscribers at Dec 28, 2019. The 26.5 million figure is from a secondary report and is to be confirmed here.</td></tr>
+<tr><td>S15</td><td>Variety and IBC reports on Disney's Q4 fiscal 2024 earnings call (Nov 14, 2024): CEO remarks on ad-supported share. Secondary; primary transcript to be located.</td></tr>
 </table>
 </section>
 </main>
